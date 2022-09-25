@@ -30,5 +30,14 @@ command -v zsh | sudo tee -a /etc/shells
 # set zsh default shell
 sudo chsh -s $(which zsh) $USER
 
+
 # install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+
+# install neovim plugins
+nvim --headless +PlugInstall +qall
+
+
+# run zsh 
+exec zsh
