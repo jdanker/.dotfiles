@@ -4,4 +4,4 @@
 
 ### TODO: 
 - Add differentiation in steps between Mac/Linux/WSL2 (mainly for homebrew)
-- automate more tool installation
+- automate git and git CLI setup, as much as possible
