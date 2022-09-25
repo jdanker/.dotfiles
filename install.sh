@@ -20,10 +20,14 @@ brew install \
 	direnv \
 	antibody \
     hugo \
+    zsh 
+
 # stow
 stow nvim
 stow git
 stow zsh
+stow p10k
+
 # add zsh to valid login shells
 command -v zsh | sudo tee -a /etc/shells
 
