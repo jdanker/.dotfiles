@@ -36,7 +36,7 @@ export CLICOLOR=1
 # zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 
 # Uncomment the following line to change how often to auto-update (in days).
-# zstyle ':omz:update' frequency 13
+ zstyle ':omz:update' frequency 13
 
 # Uncomment the following line if pasting URLs and other text is messed up.
 # DISABLE_MAGIC_FUNCTIONS="true"
@@ -113,3 +113,9 @@ alias cat='bat'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/jdanker/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/jdanker/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/jdanker/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/jdanker/google-cloud-sdk/completion.zsh.inc'; fi
