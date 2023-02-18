@@ -31,9 +31,7 @@ stow git
 stow zsh
 stow p10k 
 
-# install powerlevel10k
 
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
 
 # add zsh to valid login shells
@@ -44,6 +42,10 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 
 # load existing configs for oh-my-zsh
 cat .zshrc.pre-oh-my-zsh >> .zshrc
+
+# install powerlevel10k
+
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
 
 # install neovim plugins
