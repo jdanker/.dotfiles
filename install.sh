@@ -53,3 +53,4 @@ nvim --headless +PlugInstall +qall
 
 # run zsh 
 zsh
+
