@@ -41,7 +41,7 @@ command -v zsh | sudo tee -a /etc/shells
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # load existing configs for oh-my-zsh
-cat .zshrc.pre-oh-my-zsh >> .zshrc
+cat .zshrc.pre-oh-my-zsh > .zshrc
 
 # install powerlevel10k
 
