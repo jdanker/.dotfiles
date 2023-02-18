@@ -51,15 +51,3 @@ nvim --headless +PlugInstall +qall
 # run zsh 
 exec zsh
 
-
-
-# install oh-my-zsh
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-
-# install neovim plugins
-nvim --headless +PlugInstall +qall
-
-
-# run zsh 
-exec zsh
