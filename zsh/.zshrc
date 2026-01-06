@@ -106,6 +106,8 @@ source $ZSH/oh-my-zsh.sh
 alias ls='ls -lartG'
 alias vim='nvim'
 alias cat='bat'
+alias homelab='ssh jdanker@192.168.4.15'
+
 #
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -119,3 +121,8 @@ if [ -f '/Users/jdanker/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/jdanker
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/jdanker/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/jdanker/google-cloud-sdk/completion.zsh.inc'; fi
+
+# Added by Windsurf
+export PATH="/Users/jdanker/.codeium/windsurf/bin:$PATH"
+
+[[ "$TERM_PROGRAM" == "kiro" ]] && . "$(kiro --locate-shell-integration-path zsh)"
